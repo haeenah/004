@@ -1,25 +1,15 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    int x, y;
+    int second, min, sec;
 
-    printf("Input two integers ");
-    scanf("%i %i", &x, &y);
+    printf("input the second :");
+    scanf("%i", &second);
 
-    //printf
-    printf("%i + %i = %i\n", x, y, x + y);
+    min = second / 60; // 분 계산
+    sec = second % 60; // 초 계산
 
-    //printf
-    printf("%i - %i = %i\n", x, y, x - y);
-
-    //printf
-    printf("%i * %i = %i\n", x, y, x * y);
-
-    //printf
-    printf("%i / %i = %i\n", x, y, x / y);
-
-    //printf
-    printf("%i %% %i = %i\n", x, y, x % y);
+    printf("the time is %i : %i\n", min, sec);
 
     return 0;
 }
